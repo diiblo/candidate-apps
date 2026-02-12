@@ -1,0 +1,99 @@
+# ============================================
+# BACKEND Symfony (/api/)
+# ============================================
+
+###> symfony/framework-bundle ###
+/backend/.env
+/backend/.env.*
+/backend/config/secrets/prod/prod.decrypt.private.php
+/backend/public/bundles/
+/backend/var/
+/backend/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/backend/phpunit.xml
+/backend/.phpunit.cache/
+/backend/var/cache/test/ # Cache des tests
+###< phpunit/phpunit ###
+
+###> symfony/asset-mapper ###
+/backend/public/assets/
+/backend/assets/vendor/
+###< symfony/asset-mapper ###
+
+# Symfony cache
+/backend/var/cache/dev/
+/backend/var/cache/prod/
+
+# Symfony logs
+/backend/var/log/dev.log
+/backend/var/log/prod.log
+
+# ============================================
+# FRONTEND React.js + TypeScript + Vite (/web/)
+# ============================================
+
+# Dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.*
+/frontend/.yarn/patches
+/frontend/.yarn/releases
+/frontend/.yarn/plugins
+/frontend/.yarn/sdks
+/frontend/.yarn/versions
+/frontend/package-lock.json
+/frontend/yarn.lock
+/frontend/pnpm-lock.yaml
+/frontend/*.local
+
+# Builds
+/frontend/dist
+/frontend/dist-ssr
+/frontend/build
+/frontend/out
+
+# Cache
+/frontend/.cache/
+/frontend/*.tsbuildinfo
+
+# Système
+Thumbs.db
+
+# Tests
+/coverage
+/.nyc_output
+
+# Débogage
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+/frontend/lerna-debug.log*
+
+# Vite
+/frontend/.vite/
+/frontend/.env.production
+/frontend/.env.development
+
+# ============================================
+# GLOBAL (racine du projet)
+# ============================================
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.swp
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
